@@ -129,7 +129,7 @@
           </td>
           {% for j in range(3) %}
           <td style="padding-right:1px; margin-right:0px;">
-            <select id="weekday{{3*i+j}}" name="weekday{{3*i+j}}" style="{% if j == 0 %}visibility:hidden;{% else %}display:none;{% endif %}">
+            <select id="weekday{{3*i+j}}" name="weekday{{3*i+j}}" style="{% if i == 0 %}visibility:hidden;{% else %}display:none;{% endif %}">
               <option value="" {% if not seminar.weekdays[3*i+j] %} selected{% endif %}></option>
               {% for wkday in short_weekdays %}
                 <option value="{{loop.index0}}"{% if seminar.weekdays[3*i+j] == loop.index0 %} selected{% endif %}>{{wkday}}</option>

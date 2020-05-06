@@ -318,8 +318,8 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('weekday'+(n-1)).style.display = 'block';
       document.getElementById('time_slot'+(n-1)).style.display = 'block';
     } else {
-      document.getElementById('weekday'+n).style.visibility = 'visible';
-      document.getElementById('time_slot'+n).style.visibility = 'visible';
+      document.getElementById('weekday'+(n-1)).style.visibility = 'visible';
+      document.getElementById('time_slot'+(n-1)).style.visibility = 'visible';
     }
     showplusminus(n);
   });
